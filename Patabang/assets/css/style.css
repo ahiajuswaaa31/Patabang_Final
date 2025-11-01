@@ -1,14 +1,21 @@
+/* Color Variables */
+:root {
+    --primary-pink: #FFC0CB;
+    --secondary-pink: #FFE5E9;
+    --primary-blue: #B9D9EB;
+    --secondary-blue: #D6E6F2;
+    --text-dark: #333333;
+}
+
 /* General Styles */
 body {
     font-family: 'Arial', sans-serif;
-    font-size: 16px; /* Standard font size */
-
+    font-size: 16px;
     margin: 0;
     padding: 0;
-    background-color: white; /* Set background to white */
-    color: black; /* Set text color to black */
+    background-color: var(--secondary-pink);
+    color: var(--text-dark);
 }
-
 
 .container {
     width: 90%;
@@ -20,32 +27,30 @@ body {
 
 /* Navigation Bar */
 .navbar {
-    background: #333; /* Dark Grey */
+    background: var(--primary-blue);
     padding: 15px;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .navbar a {
-    color: white;
-    font-size: 18px; /* Standard font size for navbar links */
-
+    color: var(--text-dark);
+    font-size: 18px;
     text-decoration: none;
     padding: 10px 20px;
     margin: 0 10px;
-    font-size: 18px;
     transition: all 0.3s ease;
 }
 
 .navbar a:hover {
-    background-color: #d32f2f; /* Vibrant Red */
+    background-color: var(--secondary-blue);
     border-radius: 5px;
 }
 
 /* Hero Section */
 .hero {
-    background: #d32f2f; /* Red */
-    color: white;
+    background: var(--primary-pink);
+    color: var(--text-dark);
     padding: 60px 20px;
     text-align: center;
     font-size: 22px;
@@ -55,34 +60,26 @@ body {
 /* Buttons */
 .btn {
     display: inline-block;
-    background: grey; /* Set button background to grey */
-    font-size: 16px; /* Standard font size for buttons */
-
-    color: white;
+    background: var(--primary-blue);
+    font-size: 16px;
+    color: var(--text-dark);
     padding: 12px 25px;
     margin: 10px;
-    font-size: 16px;
     text-decoration: none;
     border-radius: 5px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
 }
 
 .btn:hover {
-    background: darkgrey; /* Change button background on hover */
-}
-
-
-.btn:hover {
-    background: #b71c1c; /* Darker Red */
+    background: var(--secondary-blue);
     transform: translateY(-2px);
 }
 
 /* Cards / Sections */
 .section {
     background: white;
-    font-size: 16px; /* Standard font size for section text */
-
+    font-size: 16px;
     padding: 30px;
     margin: 20px 0;
     border-radius: 8px;
@@ -96,25 +93,27 @@ body {
 
 /* Footer */
 .footer {
-    background-color: #333;
-    font-size: 14px; /* Standard font size for footer text */
-
-    color: white;
+    background-color: var(--primary-pink);
+    font-size: 14px;
+    color: var(--text-dark);
     text-align: center;
     padding: 15px;
     position: relative;
     bottom: 0;
-    width: 100%;
-    margin-top: 20px;
+    width: 100%;ar(--primary-pink); /* Set background to white */
+    margin-top: 20px;x; /* Standard font size for footer text */
 }
-
-/* Responsive */
+(--text-dark); /* Set text color to black */
+/* Responsive */center;
 @media (max-width: 768px) {
-    .container {
-        width: 95%;
+    .container {   position: relative;
+        width: 95%;    bottom: 0;
     }
     .navbar {
         display: flex;
+        flex-direction: column;
+    }sponsive */
+}idth: 768px) {
         flex-direction: column;
     }
 }
